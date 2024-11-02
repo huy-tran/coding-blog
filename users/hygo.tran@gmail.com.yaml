@@ -1,0 +1,12 @@
+name: 'Huy Tran'
+super: true
+id: 3cb32cbe-6ef0-48ab-8419-7a35e4e2890a
+password_hash: $2y$12$2kYm4rxYpkvdALE9D5.8R.AfpwmbCCBOd1IFSv7hRaxPxBKI4TeW2
+preferences:
+  assets:
+    images:
+      mode: grid
+  theme: dark
+  collections:
+    players:
+      per_page: 500

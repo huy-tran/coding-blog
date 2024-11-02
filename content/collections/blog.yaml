@@ -1,0 +1,12 @@
+title: Blog
+taxonomies:
+  - categories
+revisions: false
+route: '/{slug}'
+date: true
+sort_dir: asc
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

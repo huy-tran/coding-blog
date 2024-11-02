@@ -1,0 +1,107 @@
+title: Blog
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: intro
+            field:
+              buttons:
+                - bold
+                - italic
+                - removeformat
+                - anchor
+              save_html: true
+              type: bard
+              display: Intro
+          -
+            handle: hero_image
+            field:
+              mode: grid
+              container: blog_assets
+              restrict: true
+              max_files: 1
+              type: assets
+              display: 'Hero Image'
+          -
+            handle: main_content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - strikethrough
+                - code
+                - codeblock
+              container: assets
+              reading_time: true
+              type: bard
+              display: 'Main Content'
+              remove_empty_nodes: false
+              sets:
+                main:
+                  display: Main
+                  sets:
+                    torchlight:
+                      display: Torchlight
+                      icon: programming-script-code-brackets
+                      fields:
+                        -
+                          handle: code_block
+                          field:
+                            type: code
+                            display: 'Code Block'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate:
+                - required
+                - 'new \Statamic\Rules\UniqueEntryValue({collection},{id},{site})'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: author
+            field:
+              max_items: 1
+              type: users
+              listable: true
+              display: Author
+              default: current
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Categories
+              mode: select
