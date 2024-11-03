@@ -25,12 +25,12 @@
     "src": "resources/img/favicon.ico"
   },
   "resources/js/app.css": {
-    "file": "assets/app-8f6a57a3.css",
+    "file": "assets/app-b9046a5d.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "css": [
-      "assets/app-8f6a57a3.css"
+      "assets/app-b9046a5d.css"
     ],
     "dynamicImports": [
       "resources/svg/icons/light/add-circle.svg",
@@ -853,7 +853,7 @@
       "resources/svg/filetypes/video.svg",
       "resources/svg/filetypes/xml.svg"
     ],
-    "file": "assets/app-aceaa728.js",
+    "file": "assets/app-ca9bde15.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
